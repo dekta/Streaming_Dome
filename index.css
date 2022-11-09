@@ -1,0 +1,115 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    border: 0px solid red;
+    background-color: #0f0617 ;
+    width: 100%;
+    padding: 5px;
+}
+#left{
+    display: flex;
+    width: 40%;
+    margin-top: 5px;
+    /* margin: 10px 20px 20px 20px; */
+    border: 0px solid blue;
+    
+}
+#left img{
+    width: 12%;
+    margin-right: 10px;
+    margin: 18px;
+}
+#left p{
+    margin-left: 20px;
+    margin-top: 30px;
+    font-family: NotoSansRegular, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 46px;
+    font-size: 16px;
+    color: white;
+}
+#left >#dropdown{
+    position: relative;
+    display: inline-block;
+}
+#left>#dropdown>.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#0f0617;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+#left>#dropdown:hover .dropdown-content{
+    display: block;
+}
+#left >#dropdown>.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  color: white;
+  margin: 10px 20px 20px 20px;
+ margin-top: 45px;
+}
+
+ #right{
+    width: 60%;
+    display: flex;
+    justify-content: right;
+    margin: 10px 20px 20px 20px;
+    margin-top: 15px;
+    border: 0px solid blue;
+ }
+ #right >.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    color: white;
+    margin: 10px 20px 20px 10px;
+    margin-top: 30px;
+    background-color: rgb(60,61,60);
+    border-radius: 25px;
+    padding: 6px;
+  }
+ #right>#search{
+    background: #0f0617;
+    border: solid 0.5px whitesmoke;
+    color: white;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 50%;
+    padding: 0px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+ }
+ #right button{
+    margin: 25px;
+    width: 15%;
+    border-radius: 5px;
+    background-color: #8230c6;
+    color: white;
+    margin-left: 5px;
+    margin-top: 30px;
+ }
+
+ .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .sticky + #content {
+    padding-top: 60px;
+  }
