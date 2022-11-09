@@ -1,0 +1,264 @@
+* {
+  font-family: sans-serif;
+  color: white;
+}
+
+body {
+  background-color: #0f0617;
+}
+
+.music-heading {
+  margin-left: 20px;
+}
+
+
+
+/* top section */
+
+#m-container-1 {
+  border: 2px solid white;
+  width: 95%;
+  height: 600px;
+  margin: auto;
+  display: flex;
+  gap: 10px;
+}
+
+/* top -left */
+
+#m-c-1-left {
+  background-image: url('https://akamaividz2.zee5.com/image/upload/w_1136,h_639,c_scale,f_webp,q_auto:eco/resources/0-0-2z5246108/list/1170x658withlogo46bb72c7c2ee4907b66f5ceac685d3c0.jpg');
+  border-radius: 1%;
+  width: 75%;
+  background-size: cover;
+  height: 100%;
+  transition: all 0.6s;
+  cursor: pointer;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.title {
+
+  margin-top: 560px;
+  margin-left: 40px;
+  color: white;
+
+}
+
+#hover-1 {
+  margin-left: -5px;
+  width: 1047px;
+  height: 80px;
+  background-color: white;
+  position: absolute;
+  top: 500px;
+  color: black;
+  display: none;
+}
+
+#hover-1>p,
+#hover-1 button {
+  color: black;
+}
+
+#m-c-1-left:hover>#hover-1 {
+  display: block;
+}
+
+#m-c-1-left:hover {
+  border: 10px solid white;
+}
+
+#hover-1>p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.watch {
+  font-size: 15px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+
+
+
+/* top right */
+#m-c-1-right {
+  width: 25%;
+  height: 600px;
+  overflow: scroll;
+  overflow-x: hidden;
+  scroll-margin: 10px 0 0 40px;
+}
+
+#m-c-1-right>div {
+  width: 354px;
+  height: 199px;
+  border-radius: 3%;
+  margin-right: 10px;
+  padding-right: 10px;
+}
+
+#m-c-1-right>div:not(:first-of-type) {
+  margin-top: 7px;
+}
+
+.music {
+  width: 350px;
+  height: 199px;
+  background-size: cover;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+#slide>div:hover {
+  border: 6px solid white;
+}
+
+#slide>div {
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: border .4s;
+}
+
+::-webkit-scrollbar-track {
+  background: #4b4646;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: rgb(32, 32, 32);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(53, 50, 50);
+}
+
+
+/* zee5 original */
+#m-container-2 {
+  width: 95%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 360px;
+  gap: 13px;
+}
+
+#m-container-2>div {
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: border .4s;
+}
+
+#m-container-2>div:hover {
+  border: 7px solid white;
+  border-radius: 3%;
+}
+
+
+#m-container-2>div>img {
+  width: 235px;
+  height: 346px;
+  border-radius: 3%;
+}
+
+
+
+/* zee top 20  */
+#m-container-3 {
+  width: 95%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 360px;
+  gap: 13px;
+}
+
+#m-container-3>div {
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: border .4s;
+}
+
+#m-container-3>div:hover {
+  border: 7px solid white;
+  border-radius: 3%;
+}
+
+
+#m-container-3>div>img {
+  width: 235px;
+  height: 346px;
+  border-radius: 3%;
+}
+
+/* zee5 top 20 marathi */
+#m-container-4 {
+  width: 94%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 160px;
+  /* border: 2px solid blue; */
+  gap: 15px;
+}
+
+#m-container-4>div:hover {
+  border: 6px solid white;
+  border-radius: 3%;
+}
+
+#m-container-4>div {
+  /* border: 2px solid yellow; */
+  border-radius: 3%;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: border .4s;
+}
+
+#m-container-4>div>a img {
+  width: 267px;
+  height: 150px;
+  border-radius: 3%;
+}
+
+#m-container-4>div>div {
+  transition: all 0.6s;
+  cursor: pointer;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* brand new music */
+
+#m-container-5 {
+  width: 95%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 360px;
+  gap: 13px;
+}
+
+#m-container-5>div {
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: border .4s;
+}
+
+#m-container-5>div:hover {
+  border: 7px solid white;
+  border-radius: 3%;
+}
+
+
+#m-container-5>div>img {
+  width: 235px;
+  height: 346px;
+  border-radius: 3%;
+}
