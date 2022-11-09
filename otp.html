@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:  #0f0617;
+        }
+        #otp_div{
+            width:28%;
+            margin: auto;
+            margin-top: 7%;
+            text-align: center;
+        }
+        #para{
+            margin:auto;
+            margin-top: 8%;
+            width:80%;
+            text-align: center;
+            color:white;
+            font:caption;
+            font-size: small;
+        }
+        #otp_div>h2{
+            color:white;
+            font:caption;
+            font-size: larger;
+            font-weight: bold;
+        }
+        #ent_otp{
+            display: flex;
+            margin: auto;
+            margin-top: 15%;
+            width:90%;
+            justify-content: space-between;
+        }
+        #ent_otp>input{
+            width:17%;
+            border:none;
+            color:white;
+            text-align: center;
+            border-bottom:  1px solid #756f7b;
+            background-color: #0f0617;
+            outline: none;
+            transition: all 0.1s;  
+        }
+        #ent_otp>input:focus{
+            border-bottom: 1.5px solid #9672de;
+        }
+        #otp_div>p{
+            color:white;
+        }
+        #verify{
+            margin-top: 10%;
+            color:gray;
+            width:95%;
+            padding:4% 0%;
+            font-size: medium;
+            background-color: #0f0617;
+            border: 1.2px solid rgb(163, 162, 162);
+            border-radius: 5px;
+        }
+        #or{
+            display: flex;
+            margin: auto;
+            margin-top: 10%;
+            width:40px;
+            height:40px;
+            color:white;
+            background-color: #1d1525;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+        }
+        #ent-pass{
+            margin-top: 10%;
+            color:gray;
+            width:95%;
+            padding:4% 0%;
+            font-size: medium;
+            background-color: #0f0617;
+            border: 1.2px solid rgb(163, 162, 162);
+            border-radius: 5px;
+        }
+        #popup{
+            width:100%;
+            background:rgba(0,0,0,0.6);
+            border:1px solid red;
+            display:none;
+
+        }
+        #ep{
+            color:white;
+        }
+        #closebtn{
+            color:white;
+        }
+        #close{
+            width:5%;
+            margin-left: 90%;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="otp_div">
+        <h2>Verify Mobile Number</h2>
+        <div id="para">
+        <p>An OTP has been sent to the entered mobile number <span></span><a href="">Change Number?</a></p>
+        </div>
+        <div id="ent_otp">
+            <input maxlength="1" type="text" id="first" onkeyup="clickEvent(this,'sec')"> 
+            <input maxlength="1" type="text" id="sec" onkeyup="clickEvent(this,'third')"> 
+            <input maxlength="1" type="text" id="third" onkeyup="clickEvent(this,'fourth')">
+            <input maxlength="1" type="text" id="fourth">
+        </div>
+        <p id="resend">Didn't get OTP? <span>Resend</span></p>
+        <button id="verify" onclick="verify()">verify</button>
+        <div id="or">or</div>
+        <button id="ent-pass" onclick="enterpass()">Enter Password</button>
+
+        <div id="popup">
+            <div id="content">
+            <img onclick="closetab()" id="close" src="https://t3.ftcdn.net/jpg/00/69/37/26/240_F_69372697_LSptpUKLbHwJSeCdBZ2uINqCQkg34oBF.jpg" alt="">
+            <h2 id="ep">Enter Password</h2>
+            <input type="text" placeholder="Password" >
+            <p>Forgot Password?</p>
+            <button >PROCEED</button>
+           </div>
+
+        </div>
+    </div>
+
+    
+</body>
+</html>
+<script src="otp.js"></script>
