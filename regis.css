@@ -1,0 +1,125 @@
+
+body{
+    background-color:#0f0617 ;
+}
+
+#container{
+    width:28%;
+    margin:auto;
+    text-align: center;
+    color:white;
+    font:caption;
+}
+#heading{
+    width:80%;
+    margin:auto;
+}
+#heading>p{
+
+    color:rgb(201, 201, 201)
+}
+#google{
+    display: flex;
+    margin: auto;
+    margin-top: 15%;
+    width:95%;
+    padding:-1% 0%; 
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+#google>img{
+    width:50px;
+    height:50px;
+}
+#google p{
+    color:#e24c97;
+    font-weight: bold;
+}
+#or{
+    display: flex;
+    margin: auto;
+    margin-top: 10%;
+    width:40px;
+    height:40px;
+    background-color: #450948;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+#option_div{
+    width:100%;
+    margin: auto;
+    height:40px;
+    margin-top: 10%;
+    border-bottom: 1px solid #756f7b;
+}
+#mobile{
+    width:75%;
+    background-color: #0f0617;
+    height: 95%;
+    border: none;
+    border-bottom: 1px solid #756f7b;
+    color:white;
+    outline: none;
+    transition: all 0.1s;
+}
+#option_div:focus{
+    border-bottom: 1.5px solid #9672de;
+}
+#code-select{
+    background-color: #0f0617;
+    color: white;
+    width: 20%;
+    height: 95%;
+    border: none;
+    outline:none;
+    
+}
+#terms{
+    /* color:#9672de; */
+    text-align: left;
+    width:90%;
+    margin-top: 8%;
+    font-size: smaller;
+    line-height: 140%;
+}
+#terms a{
+    text-decoration: none;
+    color: #8679f6;
+}
+#send{
+    width: 100%;
+    height:45px;
+    background-color: #0f0617;
+    color:grey;
+    font-size: medium;
+    border: 1px solid grey;
+    margin-top: 6%;
+    border-radius: 5px;
+}
+#login{
+    font-size: smaller;
+    margin-top: 5%;
+}
+#login>a{
+    text-decoration: none;
+    color:#8679f6
+}
+@media all and (min-width:290px) and (max-width:595px){
+    #container{
+        width:90%;
+    }
+    #heading{
+        width:95%;
+    }
+}
+@media all and (min-width:596px) and (max-width:850px){
+    #container{
+        width:50%;
+    }
+    #heading{
+        width:90%;
+    }
+}
