@@ -1,5 +1,4 @@
 function navbar(){
-
     return `<div id="left">
     <img src="./images/S.png" alt="">
     <p>Home</p>
@@ -24,11 +23,21 @@ function navbar(){
 <div id="right">
     <input  type="text" placeholder="Search for Movies,Shows,Channels etc."  id="search">
     <span class="material-symbols-outlined">translate</span>
-    <span class="material-symbols-outlined">person</span>
+    <button class="login">Login</button>
     <button>Buy Plan</button>
     <span class="material-symbols-outlined"> menu</span>
 </div>`
     
 }
+let navbar_div = document.getElementById("navbar");
+window.onscroll = function() {myFunction()};
+var sticky = navbar_div.offsetTop;
+function myFunction() {
+    if (window.pageYOffset >= sticky) {
+        navbar_div.classList.add("sticky")
+    } else {
+        navbar_div.classList.remove("sticky");
+    }
+  }
 
-export default navbar;
+export default navbar

@@ -2,6 +2,8 @@ body{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    width: 100%;
+    background-color: #0f0617 
 }
 
 #navbar{
@@ -110,6 +112,32 @@ body{
     width: 100%;
   }
 
-  .sticky + #content {
-    padding-top: 60px;
+  .sticky + .swiper {
+    padding-top: 100px;
   }
+  
+  
+  .swiper {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+  }
+  .swiper-slide figure{
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .swiper-slide figure figcaption{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .swiper-slide figure img{
+    width: 100%;
+    margin: 0px;
+  }
+  
