@@ -1,4 +1,17 @@
 
+// import navbar
+
+import  navbar  from "./components/navbar.js";
+console.log('navbar',navbar)
+
+let navbar_div = document.getElementById("navbar");
+navbar_div.innerHTML = navbar(); 
+
+
+
+
+
+
 var music1 = JSON.parse(localStorage.getItem("music1"))
 let slide = document.getElementById('m-c-1-right');
 
@@ -8,7 +21,7 @@ function appendmovies1(data) {
     
     data.forEach(function (el) {
         let div = document.createElement("div");
-        div.className="music"
+        div.className="swiper1"
 
         let img = document.createElement("img");
         img.src = el.img_url
@@ -34,7 +47,7 @@ function appendmovies2(data) {
     
     data.forEach(function (el) {
         let div = document.createElement("div");
-        div.id = "cards"
+        div.className= "swiper-slide"
 
         let img = document.createElement("img");
         img.src = el.img_url;
@@ -73,10 +86,10 @@ appendmovies3(music3);
 
 var music4 = JSON.parse(localStorage.getItem("music4"))
 
-
+let data_div = document.getElementById("m-container-4");
 
 function appendmovies4(data) {
-    let data_div = document.getElementById("m-container-4");
+ 
     
     data.forEach(function (el) {
         let div = document.createElement("div");
