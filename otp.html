@@ -86,26 +86,79 @@
             border-radius: 5px;
         }
         #popup{
-            width:100%;
+            width:50%;
+            margin-left: 25%;
             background:rgba(0,0,0,0.6);
-            border:1px solid red;
+            background-color: #0f0617;
+            border:1px solid white;
             display:none;
-
+            position: absolute ;
+            top:30%;
+            /* left:center; */
+            text-align: center;
+            font:caption;
+            font-size: large;
         }
-        #ep{
-            color:white;
-        }
-        #closebtn{
+        #password{
             color:white;
         }
         #close{
-            width:5%;
-            margin-left: 90%;
+            display: flex;
+            color:white;
+            font-weight: bold;
+            background-color:#756f7b;
+            position:relative;
+            top:-30px;
+            left:-15px;
+            font:caption;
+            border-radius: 20px;
+            justify-content: center;
+            align-items: center;
+
+        }
+        #close{
+            width:30px;
+            height:30px;
+            margin-left: 95%;
             
+        }
+        #inp_div{
+            width:80%;
+            margin:auto;
+        }
+        #inp_div input{
+            width:100%;
+            height:40px;
+            border:none;
+            color:white;
+            border-bottom:  1px solid #756f7b;
+            background-color: #0f0617;
+            outline: none;
+            transition: all 0.1s;  
+        }
+        #inp_div input:focus{
+            border-bottom: 1.5px solid #9672de;
+        }
+        #forgot{
+            color:cornflowerblue;
+            text-align: end;
+            font-size: medium;
+
+        }
+        #proceed{
+            margin-top: 10%;
+            color:gray;
+            width:70%;
+            padding:4% 0%;
+            font-size: medium;
+            background-color: #0f0617;
+            border: 1.2px solid rgb(163, 162, 162);
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
+    
     <div id="otp_div">
         <h2>Verify Mobile Number</h2>
         <div id="para">
@@ -122,17 +175,22 @@
         <div id="or">or</div>
         <button id="ent-pass" onclick="enterpass()">Enter Password</button>
 
-        <div id="popup">
-            <div id="content">
-            <img onclick="closetab()" id="close" src="https://t3.ftcdn.net/jpg/00/69/37/26/240_F_69372697_LSptpUKLbHwJSeCdBZ2uINqCQkg34oBF.jpg" alt="">
-            <h2 id="ep">Enter Password</h2>
-            <input type="text" placeholder="Password" >
-            <p>Forgot Password?</p>
-            <button >PROCEED</button>
-           </div>
 
-        </div>
     </div>
+    <div id="popup">
+        <div >
+        <h1 onclick="closetab()" id="close">x</h1>
+            <!-- <img onclick="closetab()" id="close" src="https://cdn-icons-png.flaticon.com/128/7783/7783030.png" alt=""> -->
+        <h2 id="password">Enter Password</h2>
+        <div id="inp_div">
+        <input type="text" placeholder="Password" >
+        <p id="forgot">Forgot Password?</p>
+        <button id="proceed">PROCEED</button>
+        </div>
+       </div>
+
+    </div>
+    
 
     
 </body>
