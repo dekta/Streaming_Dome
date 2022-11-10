@@ -7,7 +7,7 @@ body{
 #navbar{
     display: flex;
     justify-content: space-between;
-    border: 0px solid red;
+    border: 0px solid white;
     background-color: #0f0617 ;
     width: 100%;
     padding: 5px;

@@ -1,6 +1,8 @@
 
 music0 = {
-    video_id : "mltafzVW-Ms"
+        video_id : "2wgQ7LGojAM" ,
+        title : "Melody Roja - Full Video | Yo Yo Honey Singh"
+
 }
 
 localStorage.setItem("music0", JSON.stringify(music0))
@@ -12,6 +14,7 @@ localStorage.setItem("music0", JSON.stringify(music0))
 music1 = [
     {
         img_url : "https://akamaividz2.zee5.com/image/upload/w_384,h_216,c_scale,f_webp,q_auto:eco/resources/0-0-2z5246113/list/1170x658withlogo29cf4e7ea5764a9ca0dc72a9c2bab4c1.jpg",
+        
         
     },
     {
