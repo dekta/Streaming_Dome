@@ -83,3 +83,10 @@ RandomVideos();
 //         line1_wrapper.append(div)
 //     })
 // }
+
+let p=document.querySelector(".login");
+p.onclick=()=>{
+
+    console.log(1)
+    window.location.href="login.html";
+}
