@@ -1,3 +1,5 @@
+//import navbar from "./components/navbar.js";
+
 
 function clickEvent(first,last){
     if(first.value.length){
@@ -26,6 +28,7 @@ const verify=()=>{
     let dig4=document.getElementById("fourth").value;
     if(dig1==1 && dig2==2 && dig3==3 && dig4==4){
         window.location.href="index.html";
+        
     }else{
         alert("Wrong OTP");
     }

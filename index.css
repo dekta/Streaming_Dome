@@ -80,7 +80,7 @@ body{
     justify-content: right;
     margin: 10px 20px 20px 20px;
     margin-top: 15px;
-    border: 0px solid blue;
+    border: px solid blue;
  }
  #right >.material-symbols-outlined {
     font-variation-settings:
@@ -106,7 +106,7 @@ body{
     margin-top: 30px;
     margin-bottom: 20px;
  }
- #right button{
+ #right button:nth-last-child(2){
     margin: 25px;
     width: 15%;
     border-radius: 5px;
@@ -149,36 +149,4 @@ body{
     width: 100%;
     margin: 0px;
   }
-  #cont{
-    color: white;
-    margin-left: 15px;
-  }
- #wrap_cont-1{
-    display: flex;
-    justify-content: space-around;
- }
- #wrap_cont-1 img{
-    width: 100%;
-    height: 250px;
- }
- #wrap_cont-2{
-    display: flex;
-    justify-content: space-around;
- }
- #wrap_cont-2 img{
-    width: 100%;
-    height: 250px;
- }
- #wrap_cont-3{
-    display: flex;
-    justify-content: space-around;
- }
- #wrap_cont-3 img{
-    width: 100%;
-    height: 250px;
- }
- .slide{
-    margin-left: 10px;
- }
- 
- 
+
