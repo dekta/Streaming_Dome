@@ -1,4 +1,7 @@
 
+// import navbar from "./components/navbar.js";
+// let navbar_div = document.getElementById("navbar");
+// navbar_div.innerHTML = navbar();
 
 
 //console.log(input_box);
@@ -18,7 +21,7 @@ const inputprocess=()=>{
         window.location.href="otp.html";
         login.style.backgroundColor="#8230c6";
         login.style.color="white";
-          
+
     }else{
         alert("Enter a Valid Number");
     }
@@ -43,3 +46,11 @@ const inputprocess=()=>{
 
 }
 //countnum();
+
+// let p=document.querySelector(".login");
+// p.onclick=()=>{
+
+//     console.log(1)
+//     window.location.href="login.html";
+    
+// }
