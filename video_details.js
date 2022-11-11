@@ -2,6 +2,11 @@ import navbar from "./components/navbar.js";
 let navbar_div = document.getElementById("navbar");
 navbar_div.innerHTML = navbar();
 
+let home = document.getElementById("home");
+home.addEventListener("click",()=>
+    window.location.href = "index.html"
+)
+
 const show = ()=>{
     let data = localStorage.getItem('c_video')
     let {videoId,snippet}= JSON.parse(data)

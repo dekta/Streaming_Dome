@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/paymentotp.css">
+
+</head>
+<body>
+
+  <img id="buy-bg"
+    src="https://c4.wallpaperflare.com/wallpaper/1017/842/358/tv-banshee-breaking-bad-vikings-wallpaper-preview.jpg"
+    alt="">
+    <p id="step1">Step 3 of 3</p>
+    <h1 id="head-sub">Subscribe to Premium</h1>
+
+
+    <div id="p-otp">
+        <label id="l-1" for="">Enter your OTP</label>
+        <br>
+        <input type="number" name="" id="otp">
+        <br>
+        <input onclick="pay()" type="button" value="Submit" id=otp-submit>
+    </div>
+</body>
+</html>
+<script>
+  
+  function pay(){
+    let otp = document.getElementById("otp");
+    if(otp.value==1234){
+      alert("Payment Successful")
+      location.href = "Success.html"
+   }
+   else{
+    alert("Invalid OTP")
+   }
+  }
+   
+</script>
