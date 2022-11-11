@@ -22,8 +22,8 @@ function navbar(){
 </div>
 <div id="right">
     <input  type="text" placeholder="Search for Movies,Shows,Channels etc."  id="search">
-    <span class="material-symbols-outlined">translate</span>
-    <button class="login">Login</button>
+    <span class="material-symbols-outlined" id="language">translate</span>
+    <div id="login"><button class="login" ">Login</button></div>
     <button>Buy Plan</button>
     <span class="material-symbols-outlined"> menu</span>
 </div>`
@@ -40,4 +40,8 @@ function myFunction() {
     }
   }
 
+  
+  
 export default navbar
+
+
