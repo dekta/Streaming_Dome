@@ -1,32 +1,11 @@
 import navbar from "./components/navbar.js";
 let navbar_div = document.getElementById("navbar");
 navbar_div.innerHTML = navbar();
-import Append from "./components/append.js"
+import {Append1,Append2,Append3} from "./components/append.js"
 
-// import Append from "./components/Append.js"
-// let content_div = document.getElementById("content");
-// content_div.innerHTML = Append()
-// window.addEventListener('scroll',() => {
 
-//     if(window.scrollY >= 50){
-//         navbar_div.classList.add("active_navbar")
-//         navbar_div.classList.add("active_navbar a")
-//     }
-//     else{
-//         navbar_div.classList.remove("active_navbar")
-//     }
-// })
-// window.onscroll = function() {myFunction()};
-// var sticky = navbar_div.offsetTop;
-// function myFunction() {
-//     if (window.pageYOffset >= sticky) {
-//         navbar_div.classList.add("sticky")
-//     } else {
-//         navbar_div.classList.remove("sticky");
-//     }
-//   }
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('#swiper-1', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -55,5 +34,3 @@ const swiper = new Swiper('.swiper', {
       },
     
   });
-
-

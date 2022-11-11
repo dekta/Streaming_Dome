@@ -7,12 +7,22 @@ body{
 }
 
 #navbar{
+   
+   position: fixed;
+   top: 0;
+   left: 0;
     display: flex;
     justify-content: space-between;
     border: 0px solid white;
     background-color: #0f0617 ;
+    z-index: 100;
     width: 100%;
     padding: 5px;
+   
+
+}
+#navbar:hover{
+   cursor: pointer;
 }
 #left{
     display: flex;
@@ -116,7 +126,6 @@ body{
     padding-top: 100px;
   }
   
-  
   .swiper {
     width: 100%;
     height: 400px;
@@ -140,4 +149,36 @@ body{
     width: 100%;
     margin: 0px;
   }
-  
+  #cont{
+    color: white;
+    margin-left: 15px;
+  }
+ #wrap_cont-1{
+    display: flex;
+    justify-content: space-around;
+ }
+ #wrap_cont-1 img{
+    width: 100%;
+    height: 250px;
+ }
+ #wrap_cont-2{
+    display: flex;
+    justify-content: space-around;
+ }
+ #wrap_cont-2 img{
+    width: 100%;
+    height: 250px;
+ }
+ #wrap_cont-3{
+    display: flex;
+    justify-content: space-around;
+ }
+ #wrap_cont-3 img{
+    width: 100%;
+    height: 250px;
+ }
+ .slide{
+    margin-left: 10px;
+ }
+ 
+ 
