@@ -21,6 +21,7 @@ function navbar(){
     </div>
 </div>
 <div id="right">
+<span class="material-symbols-outlined" id="s">search</span>
 <input  type="text" placeholder="Search for Movies,Shows,Channels etc."  id="search">
 <span class="material-symbols-outlined" id="language">translate</span>
 <div id="login"><button class="login" ">Login</button></div>
