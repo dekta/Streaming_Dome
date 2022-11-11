@@ -55,38 +55,5 @@ const swiper = new Swiper('.swiper', {
       },
     
   });
-// swiper()
-// let line1_wrapper = document.querySelector(".swiper-wrapper")
-const RandomVideos = async () => {
-    try{
-        const API_KEY = 'AIzaSyAvXhy8R1ZBKbFsxM1eRSteQ-PcdlQ5NU0'
-        let res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=12&key=${API_KEY}`)
-        let data = await res.json()
-        console.log(data.items)
-        let actual = data.items
-        Append(actual)
-        console.log(actual)
-    }
-    catch(err){
-        console.log(err)
-    }
-}
-RandomVideos();
 
-// const Append = (data) =>{
-//     data.forEach((el)=>{
-//         let div = document.createElement("div")
-//         div.setAttribute("class","swiper-slide");
-//         let img = document.createElement('img');
-//         img.src = el.snippet.thumbnails
-//         div.append(div)
-//         line1_wrapper.append(div)
-//     })
-// }
 
-let p=document.querySelector(".login");
-p.onclick=()=>{
-
-    console.log(1)
-    window.location.href="login.html";
-}
