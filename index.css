@@ -13,6 +13,7 @@ body{
     background-color: #0f0617 ;
     width: 100%;
     padding: 5px;
+
 }
 #left{
     display: flex;
@@ -116,7 +117,6 @@ body{
     padding-top: 100px;
   }
   
-  
   .swiper {
     width: 100%;
     height: 400px;
@@ -140,4 +140,35 @@ body{
     width: 100%;
     margin: 0px;
   }
-  
+  #cont{
+    color: white;
+    margin-left: 15px;
+  }
+ #wrap_cont-1{
+    display: flex;
+    justify-content: space-around;
+ }
+ #wrap_cont-1 img{
+    width: 100%;
+    height: 250px;
+ }
+ #wrap_cont-2{
+    display: flex;
+    justify-content: space-around;
+ }
+ #wrap_cont-2 img{
+    width: 100%;
+    height: 250px;
+ }
+ #wrap_cont-3{
+    display: flex;
+    justify-content: space-around;
+ }
+ #wrap_cont-3 img{
+    width: 100%;
+    height: 250px;
+ }
+ .slide{
+    margin-left: 10px;
+ }
+ 

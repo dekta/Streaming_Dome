@@ -1,32 +1,11 @@
 import navbar from "./components/navbar.js";
 let navbar_div = document.getElementById("navbar");
 navbar_div.innerHTML = navbar();
-import Append from "./components/append.js"
+import {Append1,Append2,Append3} from "./components/append.js"
 
-// import Append from "./components/Append.js"
-// let content_div = document.getElementById("content");
-// content_div.innerHTML = Append()
-// window.addEventListener('scroll',() => {
 
-//     if(window.scrollY >= 50){
-//         navbar_div.classList.add("active_navbar")
-//         navbar_div.classList.add("active_navbar a")
-//     }
-//     else{
-//         navbar_div.classList.remove("active_navbar")
-//     }
-// })
-// window.onscroll = function() {myFunction()};
-// var sticky = navbar_div.offsetTop;
-// function myFunction() {
-//     if (window.pageYOffset >= sticky) {
-//         navbar_div.classList.add("sticky")
-//     } else {
-//         navbar_div.classList.remove("sticky");
-//     }
-//   }
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('#swiper-1', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -56,30 +35,76 @@ const swiper = new Swiper('.swiper', {
     
   });
 // swiper()
-// let line1_wrapper = document.querySelector(".swiper-wrapper")
-const RandomVideos = async () => {
+const webSeries = async () => {
     try{
-        const API_KEY = 'AIzaSyAvXhy8R1ZBKbFsxM1eRSteQ-PcdlQ5NU0'
-        let res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=12&key=${API_KEY}`)
+        const API_KEY = 'AIzaSyDG7VqVCE8jDmCtRSDyfo5Vn7sqAkOvfg8'
+        let res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&q=webseries&key=${API_KEY}`)
         let data = await res.json()
         console.log(data.items)
         let actual = data.items
-        Append(actual)
+        Append1(actual)
         console.log(actual)
     }
     catch(err){
         console.log(err)
     }
 }
-RandomVideos();
+webSeries ();
+const Trending = async () => {
+    try{
+        const API_KEY = 'AIzaSyDG7VqVCE8jDmCtRSDyfo5Vn7sqAkOvfg8'
+        let res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&q=topMovies&key=${API_KEY}`)
+        let data = await res.json()
+        console.log(data.items)
+        let actual = data.items
+        Append2(actual)
+        //console.log(actual)
+    }
+    catch(err){
+        console.log(err)
+    }
+}
+Trending ();
+const songs = async () => {
+    try{
+        const API_KEY = 'AIzaSyDG7VqVCE8jDmCtRSDyfo5Vn7sqAkOvfg8'
+        let res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&q=song&key=${API_KEY}`)
+        let data = await res.json()
+        console.log(data.items)
+        let actual = data.items
+        Append3(actual)
+        //console.log(actual)
+    }
+    catch(err){
+        console.log(err)
+    }
+}
+songs ();
 
-// const Append = (data) =>{
-//     data.forEach((el)=>{
-//         let div = document.createElement("div")
-//         div.setAttribute("class","swiper-slide");
-//         let img = document.createElement('img');
-//         img.src = el.snippet.thumbnails
-//         div.append(div)
-//         line1_wrapper.append(div)
-//     })
-// }
+let search = document.getElementById("search");
+
+search.addEventListener('keypress', function(e){
+    if(e.key === "Enter"){
+        e.preventDefault();
+        let input = document.getElementById('search').value;
+        console.log(input)
+        searchVideos(input)
+        // window.location.href = "search.html"
+    }
+})
+
+
+const searchVideos = async () => {
+    try{
+        const API_KEY = 'AIzaSyDxy7-PhsyD674ArK3Io9FWAjBoujle6YI'
+        let search = document.getElementById('search').value
+        let response = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=8&q=${search}&key=${API_KEY}`) 
+        let data = await response.json()
+        let actual = data.items
+        console.log(actual)
+        localStorage.setItem("searchvideo",JSON.stringify(actual))
+    }
+    catch(err){
+        console.log(err)
+    }
+}

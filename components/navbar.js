@@ -2,7 +2,7 @@ function navbar(){
     return `<div id="left">
     <img src="./images/S.png" alt="">
     <p>Home</p>
-    <p>Tv Shows</p>
+    <p>Music</p>
     <p>Movies</p>
     <div id="dropdown">
         <span class="material-symbols-outlined" class="dropdown">apps</span>
@@ -12,7 +12,7 @@ function navbar(){
             <p>Eduauraa</p>
             <p>Premium</p>
             <p>Live Tv</p>
-            <p>Music</p>
+            <p>Tv Shows</p>
             <p>Rent</p>
             <p>Kids</p>
             <p>Videos</p>
@@ -21,7 +21,7 @@ function navbar(){
     </div>
 </div>
 <div id="right">
-    <input  type="text" placeholder="Search for Movies,Shows,Channels etc."  id="search">
+<input  type="text" placeholder="Search for Movies,Shows,Channels etc."  id="search">
     <span class="material-symbols-outlined">translate</span>
     <button class="login">Login</button>
     <button>Buy Plan</button>
@@ -39,5 +39,7 @@ function myFunction() {
         navbar_div.classList.remove("sticky");
     }
   }
+
+
 
 export default navbar
