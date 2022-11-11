@@ -2,6 +2,10 @@ import navbar from "./components/navbar.js";
 let navbar_div = document.getElementById("navbar");
 navbar_div.innerHTML = navbar();
 
+let home = document.getElementById("home");
+home.addEventListener("click",()=>{
+    location.href = "./index.html"
+})
 let search = document.getElementById("search");
 
 search.addEventListener('keypress', function(e){

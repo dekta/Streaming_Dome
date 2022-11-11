@@ -17,8 +17,7 @@ body{
     background-color: #0f0617 ;
     z-index: 100;
     width: 100%;
-    padding: 5px;
-   
+    
 
 }
 #navbar:hover{
@@ -81,6 +80,10 @@ body{
     margin: 10px 20px 20px 20px;
     margin-top: 15px;
     border: 0px solid blue;
+ }
+ #right #s{
+   /* margin-right: -50px; */
+   border: 2px soild red;
  }
  #right >.material-symbols-outlined {
     font-variation-settings:
@@ -181,4 +184,10 @@ body{
     margin-left: 10px;
  }
  
- 
+ @media only screen and (max-width: 520px) {
+   #navbar{
+     width: 100%;
+     object-fit: cover;
+     display: inline;
+   }
+ }
