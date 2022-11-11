@@ -89,7 +89,7 @@ search.addEventListener('keypress', function(e){
         let input = document.getElementById('search').value;
         console.log(input)
         searchVideos(input)
-        // window.location.href = "search.html"
+        window.location.href = "search.html"
     }
 })
 

@@ -7,13 +7,22 @@ body{
 }
 
 #navbar{
+   
+   position: fixed;
+   top: 0;
+   left: 0;
     display: flex;
     justify-content: space-between;
     border: 0px solid white;
     background-color: #0f0617 ;
+    z-index: 100;
     width: 100%;
     padding: 5px;
+   
 
+}
+#navbar:hover{
+   cursor: pointer;
 }
 #left{
     display: flex;
@@ -171,4 +180,5 @@ body{
  .slide{
     margin-left: 10px;
  }
+ 
  

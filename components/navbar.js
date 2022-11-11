@@ -1,7 +1,7 @@
 function navbar(){
     return `<div id="left">
     <img src="./images/S.png" alt="">
-    <p>Home</p>
+    <p id="home">Home</p>
     <p>Music</p>
     <p>Movies</p>
     <div id="dropdown">
