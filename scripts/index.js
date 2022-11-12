@@ -1,8 +1,7 @@
-import navbar from "./components/navbar.js";
+import navbar from "../components/navbar.js";
 let navbar_div = document.getElementById("navbar");
 navbar_div.innerHTML = navbar();
-import {Append1,Append2,Append3} from "./components/append.js"
-
+import {Append1,Append2,Append3} from "../components/append.js"
 
 
 const swiper = new Swiper('#swiper-1', {
@@ -142,3 +141,13 @@ const user=()=>{
     }
 }
 user();
+
+let music = document.getElementById("music");
+music.addEventListener("click",()=>{
+    window.location.replace("./music.html")
+})
+
+let movie = document.getElementById("movie");
+movie.addEventListener("click",()=>{
+    window.location.replace("./movie.html")
+})

@@ -2,8 +2,8 @@ function navbar(){
     return `<div id="left">
     <img src="./images/S.png" alt="">
     <p id="home">Home</p>
-    <p>Music</p>
-    <p>Movies</p>
+    <p id="music">Music</p>
+    <p id="movie">Movies</p>
     <div id="dropdown">
         <span class="material-symbols-outlined" class="dropdown">apps</span>
         <div class="dropdown-content">
@@ -25,12 +25,8 @@ function navbar(){
 <input  type="text" placeholder="Search for Movies,Shows,Channels etc."  id="search">
 <span class="material-symbols-outlined" id="language">translate</span>
 <div id="login"><button class="login" ">Login</button></div>
-<input  type="text" placeholder="Search for Movies,Shows,Channels etc."  id="search">
-<span class="material-symbols-outlined">translate</span>
-<button class="login">Login</button>
-
-    <button>Buy Plan</button>
-    <span class="material-symbols-outlined"> menu</span>
+<button>Buy Plan</button>
+<span class="material-symbols-outlined"> menu</span>
 </div>`
     
 }

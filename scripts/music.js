@@ -1,16 +1,17 @@
 
 // import navbar
 
-import  navbar  from "./components/navbar.js";
+import  navbar  from "../components/navbar.js";
 console.log('navbar',navbar)
 
 let navbar_div = document.getElementById("navbar");
 navbar_div.innerHTML = navbar(); 
 
-
-
-
-
+let home = document.getElementById("home");
+home.addEventListener('click',()=>{
+    console.log("me")
+    window.location.replace("./index.html")
+})
 
 var music1 = JSON.parse(localStorage.getItem("music1"))
 let slide = document.getElementById('m-c-1-right');
@@ -132,7 +133,6 @@ appendmovies5(music5)
 
 let watchnow = document.getElementById("watch");
 watchnow.onclick = () => {
-
     window.location.href = './musicvideo.html';
 }
 

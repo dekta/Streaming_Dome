@@ -1,3 +1,8 @@
+import  navbar  from "../components/navbar.js";
+console.log(navbar)
+let navbar_div = document.getElementById("navbar");
+navbar_div.innerHTML = navbar(); 
+
 function slider(){
     const arr=[
         "https://akamaividz2.zee5.com/image/upload/w_1188,h_475,c_scale,f_webp,q_auto:eco/resources/0-0-1z5228525/cover/1920x7701789cd01c98a4b098ff87b399b61530c3e52cc15ff174f4689cc1ebefe5b40ff.jpg",
@@ -398,3 +403,5 @@ arrows.forEach((elem, i) => {
   
 // console.log( Math.floor(window.innerWidth/240))
 });
+
+
