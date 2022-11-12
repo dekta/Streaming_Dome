@@ -125,7 +125,7 @@ const user=()=>{
   let otp_num=localStorage.getItem("otp_number");
     console.log(otp_num);
 
-    let appending=document.getElementById("appending");
+    //let appending=document.getElementById("appending");
    
     if(otp_num!=null){
       document.querySelector(".login").style.display="none";
