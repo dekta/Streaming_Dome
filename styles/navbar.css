@@ -32,9 +32,10 @@ body{
     
 }
 #left img{
-    width: 12%;
+    width: 17%;
     margin-right: 10px;
     margin: 18px;
+    border-radius: 35px;
 }
 #left p{
     margin-left: 20px;

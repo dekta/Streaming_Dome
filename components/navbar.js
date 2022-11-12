@@ -1,6 +1,6 @@
 function navbar(){
     return `<div id="left">
-    <img src="./images/S.png" alt="">
+    <img src="./images/img.png" alt="">
     <p id="home">Home</p>
     <p id="music">Music</p>
     <p id="movie">Movies</p>
