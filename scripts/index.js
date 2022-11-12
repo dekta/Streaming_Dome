@@ -3,6 +3,10 @@ let navbar_div = document.getElementById("navbar");
 navbar_div.innerHTML = navbar();
 import {Append1,Append2,Append3} from "../components/append.js"
 
+import footer from"../components/footer.js";
+let footer_div=document.getElementById("footer")
+footer_div.innerHTML=footer()
+
 
 const swiper = new Swiper('#swiper-1', {
     // Optional parameters
