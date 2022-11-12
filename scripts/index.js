@@ -155,3 +155,8 @@ let movie = document.getElementById("movie");
 movie.addEventListener("click",()=>{
     window.location.replace("./movie.html")
 })
+
+let buy = document.getElementById("byplan");
+buy.onclick =()=>{
+    window.location.href = "buyplan.html"
+}

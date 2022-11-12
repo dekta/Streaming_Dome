@@ -7,6 +7,16 @@ import footer from"../components/footer.js";
 let footer_div=document.getElementById("footer")
 footer_div.innerHTML=footer()
 
+ let music = document.getElementById("music");
+ music.onclick =()=>{
+    location.href = "music.html"
+ }
+ 
+ let buy = document.getElementById("byplan");
+buy.onclick =()=>{
+    window.location.href = "buyplan.html"
+}
+
 function slider(){
     const arr=[
         "https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5246201/cover/1920x7702dea4d55e70f414f9e097f1e2d640628.jpg",
