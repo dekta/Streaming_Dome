@@ -127,3 +127,22 @@ body{
     padding-top: 100px;
   }
   
+  #login{
+    width:10%;
+    display: flex;
+    align-items: center;
+  }
+  #login>button{
+    background-color:black;
+    border: 1.2px solid white;
+    color:white;
+    width:100%;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 6px 10px;
+  }
+  #login>button:hover{
+    background-color: white;
+    color:black;
+    cursor: pointer;
+  }

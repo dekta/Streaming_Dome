@@ -7,6 +7,10 @@ console.log('navbar',navbar)
 let navbar_div = document.getElementById("navbar");
 navbar_div.innerHTML = navbar(); 
 
+import footer from"../components/footer.js";
+let footer_div=document.getElementById("footer")
+footer_div.innerHTML=footer()
+
 let home = document.getElementById("home");
 home.addEventListener('click',()=>{
     console.log("me")
@@ -143,3 +147,28 @@ card.onclick = () => {
 }
 
 
+
+const user=()=>{
+    let otp_num=localStorage.getItem("otp_number");
+      console.log(otp_num);
+  
+      //let appending=document.getElementById("appending");
+     
+      if(otp_num!=null){
+        document.querySelector(".login").style.display="none";
+  
+        let image_div=document.getElementById("login");
+        
+        let span=document.createElement("span");
+        span.setAttribute("class","material-symbols-outlined");
+        span.innerText="person";
+        span.style.color="white"
+        span.style.backgroundColor="#3c3d3c";
+        span.style.padding="5px";
+        span.style.borderRadius="25px"
+        span.style.marginTop="6px"
+        image_div.append(span);
+   
+      }
+  }
+  user();
