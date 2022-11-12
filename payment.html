@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/payment.css">
+</head>
+
+<body>
+    <img id="buy-bg"
+    src="https://c4.wallpaperflare.com/wallpaper/1017/842/358/tv-banshee-breaking-bad-vikings-wallpaper-preview.jpg"
+    alt="">
+    <p id="step1">Step 2 of 3</p>
+    <h1 id="head-sub">Subscribe to Premium</h1>
+
+    <div class="payment-con">
+        <h1>Confirm Your Payment</h1>
+
+        <div class="first-row">
+            <div class="name">
+                <h3>Mobile No.</h3>
+                <div class="input-field">
+                    <input maxlength="10" type="text" id="mobile-number">   
+                </div>
+            </div>
+            <div class="cvv">
+                <h3>CVV</h3>
+                <div class="input-field">
+                    <input maxlength="10" type="password" id="cvv">
+                </div>
+            </div>
+        </div>
+        <div class="name">
+            <h3>Name</h3>
+            <div class="input-field">
+                <input maxlength="20" type="text" id="custname">
+            </div>
+        <div>
+
+        </div>
+        <div class="second-row">
+            <div class="card-number">
+                <h3>Card Number</h3>
+                <div class="input-field">
+                    <input maxlength="12" type="text" id="cardnum">
+                </div>
+            </div>
+        </div>
+        <div class="third-row">
+            <h3>Card Number</h3>
+            <div class="selection">
+                <div class="date">
+                    <select name="months" id="months">
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="May">May</option>
+                        <option value="Jun">Jun</option>
+                        <option value="Jul">Jul</option>
+                        <option value="Aug">Aug</option>
+                        <option value="Sep">Sep</option>
+                        <option value="Oct">Oct</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dec">Dec</option>
+                      </select>
+                      <select name="years" id="years">
+                        <option value="2026">2026</option>
+                        <option value="2025">2025</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                      </select>
+                </div>
+            </div>    
+        </div>
+        <button id="confirm">Confirm</button>
+
+
+
+</body>
+
+</html>
+<script src="./scripts/payment.js"></script>

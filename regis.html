@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/regis.css">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <div id="container">
+        <div id="heading">
+        <h3>Create a new account</h3>
+        <p>Create an account to continue enjoying uninterrupted video and personalised experience</p>
+        </div>
+        <div id="google"><img src="https://www.zee5.com/images/google-social-icon-circle.svg?ver=2.52.50" alt=""><p>Sign In</p></div>
+        <div id="or">or</div>
+        <div id="option_div">
+            <select name="code" id="code-select">
+                <option value="91">+91</option>
+                <option value="62">+62</option>
+                <option value="98">+98</option>
+                <option value="81">+81</option>
+        </select>
+        <input oninput="countnum()" id="mobile"  type="text" placeholder="Mobile Number">
+        </div>
+        <div id="terms">
+        <p >By proceeding you agree to our <a href="">Terms of services</a> & <a href=""> Privacy Policy.</a></p>
+         </div>
+         <button onclick="registeruser()" id="send">Send OTP</button>
+         <p id="login">Already registered?<a href="login.html"> Login</a></p>
+    </div>
+    
+</body>
+</html>
+<script src="./scripts/regis.js"></script>

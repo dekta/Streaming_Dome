@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/login.css">
+</head>
+<body>
+    <div id="container">
+    <h4>Login to STREAMING-DOME</h4>
+    <p id="para">Login to continue enjoying uninterrupted video and personalised experience.</p>
+    <div id="images">
+        <img src="https://www.zee5.com/images/apple-social-icon-circle.svg?ver=2.52.50" alt="">
+        <img src="https://www.zee5.com/images/google-social-icon-circle.svg?ver=2.52.50" alt="">
+        <img src="https://www.zee5.com/images/fb-social-icon-circle.svg?ver=2.52.50" alt="">
+        <img src="https://www.zee5.com/images/twitter-social-icon.svg?ver=2.52.50" alt="">
+    </div>
+    <div id="or">or</div>
+    <div id="option-div">
+    <select name="code" id="code-select">
+        <option value="91">+91</option>
+        <option value="62">+62</option>
+        <option value="98">+98</option>
+        <option value="81">+81</option>
+    </select>
+    <input oninput="countnum()" id="enter"  type="text" placeholder="Email ID or Mobile Number">
+   </div>
+   <p id="fp">Forgot Password?</p>
+   <button onclick="inputprocess()"  id="login">Login</button>
+   <p id="anchor">New to STREAMING-DOME ? <a href="regis.html">Register</a></p>
+
+
+   </div>
+   
+
+    
+</body>
+</html>
+<script src="./scripts/login.js"></script>

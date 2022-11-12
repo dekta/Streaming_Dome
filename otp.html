@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/otp.css">
+    <title>Document</title>
+
+</head>
+<body>
+    
+    <div id="otp_div" >
+        <h2 id="check">Verify Mobile Number</h2>
+        <div  id="para">
+        <p>An OTP has been sent to the entered mobile number + <span id="span_no"></span><a href="regis.html"> Change Number?</a></p>
+        </div>
+        <div id="ent_otp">
+            <input maxlength="1" type="text" id="first" onkeyup="clickEvent(this,'sec')"> 
+            <input maxlength="1" type="text" id="sec" onkeyup="clickEvent(this,'third')"> 
+            <input maxlength="1" type="text" id="third" onkeyup="clickEvent(this,'fourth')">
+            <input oninput="otpverify()" maxlength="1" type="text" id="fourth">
+        </div>
+        <div id="resend_div">
+        <p id="resend">Didn't get the OTP? <span>Resend</span></p>
+        </div>
+        <button id="verify_btn" onclick="verify()">verify</button>
+        <div id="or">or</div>
+        <button  id="ent-pass" onclick="enterpass()">Enter Password</button>
+
+
+    </div>
+    <div id="popup">
+        <div >
+        <h1 onclick="closetab()" id="close">x</h1>
+            <!-- <img onclick="closetab()" id="close" src="https://cdn-icons-png.flaticon.com/128/7783/7783030.png" alt=""> -->
+        <h2 id="password">Enter Password</h2>
+        <div id="inp_div">
+        <input oninput="passwordcount()" id="pass" type="text" placeholder="Password" >
+        <p id="forgot">Forgot Password?</p>
+        <button onclick="process()" id="proceed">PROCEED</button>
+        </div>
+       </div>
+
+    </div>
+    
+
+    
+</body>
+</html>
+<script src="./scripts/otp.js"></script>
