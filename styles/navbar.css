@@ -83,7 +83,7 @@ body{
     border: 0px solid blue;
  }
  
- #right >.material-symbols-outlined {
+ #right>.material-symbols-outlined {
     font-variation-settings:
     'FILL' 0,
     'wght' 400,
@@ -96,6 +96,7 @@ body{
     border-radius: 25px;
     padding: 6px;
   }
+  
  #right>#search{
     background: #0f0617;
     border: solid 0.5px whitesmoke;

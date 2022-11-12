@@ -9,13 +9,13 @@ footer_div.innerHTML=footer()
 
 function slider(){
     const arr=[
-        "https://akamaividz2.zee5.com/image/upload/w_1188,h_475,c_scale,f_webp,q_auto:eco/resources/0-0-1z5228525/cover/1920x7701789cd01c98a4b098ff87b399b61530c3e52cc15ff174f4689cc1ebefe5b40ff.jpg",
-        "https://akamaividz2.zee5.com/image/upload/w_1188,h_475,c_scale,f_webp,q_auto:eco/resources/0-0-1z5246147/cover/1920x77061cfc501b93f489b971525bcc03d06c2.jpg",
-        "https://akamaividz2.zee5.com/image/upload/w_1188,h_475,c_scale,f_webp,q_auto:eco/resources/0-0-1z5227565/cover/1920x7704ce388d5a6e74dac8ad9255657da588f.jpg",
-        "https://akamaividz2.zee5.com/image/upload/w_1188,h_475,c_scale,f_webp,q_auto:eco/resources/0-0-1z5243021/cover/1920x770a9d390ff517b482d9e051723d481ba1c.jpg",
-        "https://akamaividz2.zee5.com/image/upload/w_1188,h_475,c_scale,f_webp,q_auto:eco/resources/0-0-1z5206274/cover/1920x770485283887ce04c66a91f3e5dc0e20747.jpg",
-        "https://akamaividz2.zee5.com/image/upload/w_1188,h_475,c_scale,f_webp,q_auto:eco/resources/0-0-1z5238458/cover/1920x77043938dce63e545c69b5c8f76f8381d18.jpg",
-        "https://akamaividz2.zee5.com/image/upload/w_1188,h_475,c_scale,f_webp,q_auto:eco/resources/0-0-19144/cover/0019144cover1012146238.jpg"
+        "https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5246201/cover/1920x7702dea4d55e70f414f9e097f1e2d640628.jpg",
+        "https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-movie_891670234/cover/dilbaro1920x770.jpg",
+        "https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-manual_h26leqasih80/cover/00manualh26leqa850391305.jpg",
+        "https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-96109/cover/makhnalyricaldrive.jpg",
+        "https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-6-1899/cover/061899incover1945984501.jpg",
+        "https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-manual_3vnum76kfvdg/cover/1920x7701198610098.jpg",
+        
 
     ];
     let i=0;
@@ -407,6 +407,11 @@ arrows.forEach((elem, i) => {
   
 // console.log( Math.floor(window.innerWidth/240))
 });
+
+let home = document.getElementById("home");
+home.onclick = ()=>{
+    window.location.href = "index.html"
+}
 
 
 

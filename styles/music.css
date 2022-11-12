@@ -23,6 +23,8 @@ body {
   margin: auto;
   display: flex;
   gap: 10px;
+  margin-top: 50px;
+  
 }
 
 /* top -left */
@@ -37,6 +39,7 @@ body {
   cursor: pointer;
   box-sizing: border-box;
   position: relative;
+  
 }
 
 .title {
