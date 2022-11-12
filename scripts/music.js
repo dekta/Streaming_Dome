@@ -13,6 +13,40 @@ home.addEventListener('click',()=>{
     window.location.replace("./index.html")
 })
 
+
+const user=()=>{
+    let otp_num=localStorage.getItem("otp_number");
+      console.log(otp_num);
+  
+      //let appending=document.getElementById("appending");
+     
+      if(otp_num!=null){
+        document.querySelector(".login").style.display="none";
+  
+        let image_div=document.getElementById("login");
+        
+        let span=document.createElement("span");
+        span.setAttribute("class","material-symbols-outlined");
+        span.innerText="person";
+        span.style.color="white"
+        span.style.backgroundColor="#3c3d3c";
+        span.style.padding="5px";
+        span.style.borderRadius="25px"
+        span.style.marginTop="6px"
+        image_div.append(span);
+   
+      }
+  }
+  user();
+
+  let movies=document.getElementById("movie");
+movies.onclick=()=>{
+    console.log(1);
+    window.location.href="./movie.html";
+}
+
+
+
 var music1 = JSON.parse(localStorage.getItem("music1"))
 let slide = document.getElementById('m-c-1-right');
 
@@ -144,27 +178,6 @@ card.onclick = () => {
 
 
 
-const user=()=>{
-    let otp_num=localStorage.getItem("otp_number");
-      console.log(otp_num);
-  
-      //let appending=document.getElementById("appending");
-     
-      if(otp_num!=null){
-        document.querySelector(".login").style.display="none";
-  
-        let image_div=document.getElementById("login");
-        
-        let span=document.createElement("span");
-        span.setAttribute("class","material-symbols-outlined");
-        span.innerText="person";
-        span.style.color="white"
-        span.style.backgroundColor="#3c3d3c";
-        span.style.padding="5px";
-        span.style.borderRadius="25px"
-        span.style.marginTop="6px"
-        image_div.append(span);
-   
-      }
-  }
-  user();
+
+
+

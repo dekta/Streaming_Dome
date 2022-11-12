@@ -406,3 +406,37 @@ arrows.forEach((elem, i) => {
 
 
 
+const user=()=>{
+    let otp_num=localStorage.getItem("otp_number");
+      console.log(otp_num);
+  
+      //let appending=document.getElementById("appending");
+     
+      if(otp_num!=null){
+        document.querySelector(".login").style.display="none";
+  
+        let image_div=document.getElementById("login");
+        
+        let span=document.createElement("span");
+        span.setAttribute("class","material-symbols-outlined");
+        span.innerText="person";
+        span.style.color="white"
+        span.style.backgroundColor="#3c3d3c";
+        span.style.padding="5px";
+        span.style.borderRadius="25px"
+        span.style.marginTop="6px"
+        image_div.append(span);
+   
+      }
+  }
+  user();
+
+  let home=document.getElementById("home");
+  home.onclick=()=>{
+    window.location.href="index.html";
+  }
+
+  let music=document.getElementById("music");
+  music.onclick=()=>{
+    window.location.href="music.html";
+  }
