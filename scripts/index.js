@@ -40,7 +40,7 @@ const swiper = new Swiper('#swiper-1', {
 
   const webSeries = async () => {
     try{
-        const API_KEY = 'AIzaSyDG7VqVCE8jDmCtRSDyfo5Vn7sqAkOvfg8'
+        const API_KEY = 'AIzaSyCfsruB5tIO1Rxp_efJNwkgXKl8WEwYuq4'
         let res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&q=webseries&key=${API_KEY}`)
         let data = await res.json()
         console.log(data.items)
@@ -55,7 +55,7 @@ const swiper = new Swiper('#swiper-1', {
 webSeries ();
 const Trending = async () => {
     try{
-        const API_KEY = 'AIzaSyDG7VqVCE8jDmCtRSDyfo5Vn7sqAkOvfg8'
+        const API_KEY = 'AIzaSyCfsruB5tIO1Rxp_efJNwkgXKl8WEwYuq4'
         let res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&q=topMovies&key=${API_KEY}`)
         let data = await res.json()
         console.log(data.items)
@@ -70,7 +70,7 @@ const Trending = async () => {
 Trending ();
 const songs = async () => {
     try{
-        const API_KEY = 'AIzaSyDG7VqVCE8jDmCtRSDyfo5Vn7sqAkOvfg8'
+        const API_KEY = 'AIzaSyCfsruB5tIO1Rxp_efJNwkgXKl8WEwYuq4'
         let res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&q=song&key=${API_KEY}`)
         let data = await res.json()
         console.log(data.items)
@@ -135,6 +135,9 @@ const user=()=>{
       let span=document.createElement("span");
       span.setAttribute("class","material-symbols-outlined");
       span.innerText="person";
+      span.onclick=()=>{
+        window.location.href="details.html";
+      }
       span.style.color="white"
       span.style.backgroundColor="#3c3d3c";
       span.style.padding="5px";

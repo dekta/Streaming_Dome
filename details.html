@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #0f0617 ;
+        }
+        #profile{
+            display: block;
+            width:70%;
+            margin:auto;
+
+            color:white;
+            font:caption
+        }
+        #profile_div{
+            margin-bottom: 30px;
+            width:100%;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 2px solid gray;
+        }
+        #profile_div>p{
+            color:blueviolet;
+        }
+        
+        #popup{
+            display: none;
+            background-color: #0f0617;
+            width:60%;
+            margin: auto;
+            text-align: center;
+            border: 1px solid gray;
+            position: absolute;
+            margin-left: 21%;
+            top:15%;
+            padding-bottom: 50px;
+        }
+        #popup>input{
+            margin: auto;
+            width: 60%;
+            margin-top: 20px;
+            height: 30px;
+        }
+        #popup>select{
+            width:61%;
+            height: 37px;
+            margin-top: 20px;
+
+        }
+        #popup>select>option{
+            height:30px;
+        }
+        #popup>button{
+            width:62%;
+            height: 37px;
+            margin-top: 20px;
+        }
+        #close{
+            display: flex;
+            width:40px;
+            height:40px;
+            margin-left: 95%;
+            color:white;
+            font-weight: bold;
+            background-color:#756f7b;
+            position:relative;
+            top:-45px;
+            left:-10px;
+            font:caption;
+            border-radius: 20px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;  
+        }
+        #popup>h1{
+            color:white;
+        }
+        #close_div{
+            text-align: end;
+        }
+        #homepage{
+            color:white;
+            background-color: #0f0617;
+            /* margin-top: 15px; */
+            height:30px;
+            width:60px;
+        }
+        #homepage>a{
+            text-decoration:none ;
+            color:white;
+            font-size: medium;
+
+        }
+        #btns{
+            display: flex;
+            justify-content: space-between;
+            width:20%;
+            align-items: center;
+        }
+        /* #logout{
+            color:white;
+        } */
+        
+    </style>
+</head>
+<body>
+    <div id="profile">
+        <div id="profile_div">
+        <h1 id="heading">My profile</h1>
+        <div id="btns">
+        <p id="edit_profile" onclick="userform()">Edit Profile</p>
+        <button id="homepage"><a id="homebutton" href="index.html">Home</a></button>
+        </div>
+        </div>
+
+        <label id="phone" for="">Phone No.</label>
+        <h3 id="num"></h3>  
+        
+    </div>
+
+    <div id="popup">
+        
+        <div id="close" onclick="closetab()">x</div>
+         <h1>Enter Details</h1>
+        <input id="name" type="text" placeholder="Enter your name"><br>
+        <input id="dob" type="date" placeholder="Choose Your DOB"><br>
+        <select name="" id="gender"><br>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+        </select>
+        <input id="pass" type="text" placeholder="Create Password"><br>
+        <button onclick="getdata()" >Submit</button>
+        
+        
+    </div>
+
+
+    
+    
+</body>
+</html>
+<script src="details.js"></script>
