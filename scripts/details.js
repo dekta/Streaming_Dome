@@ -92,9 +92,10 @@
         getuserdata();
 
 
-        // const logout=()=>{
+        const logout=()=>{
+            //let num=null;
+            localStorage.removeItem("otp_number");
+            window.location.href="index.html";
 
-        //     localStorage.getItem("otp_number")=null;
-
-        // }
+        }
         

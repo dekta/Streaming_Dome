@@ -67,8 +67,9 @@ const closetab=()=>{
 }
 
 const process=()=>{
+    let password=localStorage.getItem("sd_pass")
     let pass=document.getElementById("pass").value;
-    if(pass.length>=6 && pass=="correct"){
+    if(pass.length>=6 && pass==password){
         window.open("index.html");
     }else{
         alert("Wrong Password");
