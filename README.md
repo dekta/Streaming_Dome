@@ -2,7 +2,7 @@
 
 
 ## deployed link
- https://tiny-jalebi-71eb17.netlify.app/
+https://spectacular-valkyrie-aa1b7c.netlify.app/
 
 ## Logo
 <img width="288" alt="img" src="https://user-images.githubusercontent.com/51295793/220435421-a7b7b27d-e7eb-452b-90d2-ba4ffbd347c9.png">
